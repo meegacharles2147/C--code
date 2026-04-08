@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int x, y, r;
+
+    printf("Enter radius and point (x,y): ");
+    scanf("%d %d %d", &r, &x, &y);
+
+    int dist = x*x + y*y;
+
+    if (dist == r*r)
+        printf("On Circle\n");
+    else if (dist > r*r)
+        printf("Outside\n");
+    else
+        printf("Inside\n");
+
+    return 0;
+}
